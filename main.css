@@ -74,7 +74,7 @@ button {
 .form {
   background-color: #1d263a;
   color: #fff;
-  padding-top: 15px;
+  padding-top: 115px;
   padding-bottom: 115px;
   text-align: center;
   display: flex;
@@ -101,7 +101,7 @@ button {
 .form label {
   font-size: 18px;
   font-weight: 600;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 .form input,
 .form select {
@@ -111,6 +111,7 @@ button {
   padding: 0px 20px 0px 20px;
   border-radius: 15px;
   border: none;
+  outline: none;
 }
 .form__submit {
   font-size: 18px;
@@ -126,6 +127,7 @@ input {
 button:hover {
   background-color: #f6980c;
   box-shadow: 0 16px 36px rgba(246 152 12 / 20%);
+  transition: background-color 0.3s ease-in;
 }
 /*Проектное задание 4.11 Ссылки не на одном уровне с заголовками*/
 footer {
