@@ -3,6 +3,10 @@ header {
   justify-content: space-between; /*Размещаем наши элементы в начале и конце оси*/
   align-items: center; /*Центрируем элементы по поперечной оси*/
   padding: 20px;
+  position: sticky;
+  background-color: #fff;
+  top: 0px;
+  z-index: 1;
 }
 body {
   font-family: "Raleway", sans-serif;
@@ -39,6 +43,19 @@ button {
 .about__sun—image {
   width: 100px;
   height: 100px;
+  /*анимация солнца*/
+
+  animation: rotation 10s infinite;
+  animation-timing-function: linear;
+  position: absolute;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 .about {
   display: flex;
