@@ -176,4 +176,77 @@ footer {
 .footer__links a {
   margin: 15px;
 }
-/*Адоптация сайта под мобильные устройства*/
+/*Адаптация сайта под мобильные устройства*/
+/*Адаптация под планшет*/
+@media (max-width: 720px) {
+  header,
+  .about,
+  .form,
+  footer {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .about h1,
+  .form h1 {
+    font-size: 36px;
+    line-height: 40px;
+  }
+  .about__sun—image {
+    width: 75px;
+    height: 75px;
+  }
+  .about__image {
+    width: 280px;
+  }
+
+  .about__images {
+    order: 1;
+  }
+  .about__info {
+    order: 2;
+  }
+
+  /*Адаптация под айфон*/
+  @media (max-width: 320px) {
+    header,
+    .about,
+    .form,
+    footer {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    section {
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+    .about h1,
+    .form h1 {
+      font-size: 36px;
+      line-height: 40px;
+    }
+    .about__sun—image {
+      width: 75px;
+      height: 75px;
+    }
+    .about__image {
+      width: 280px;
+    }
+    .about {
+      display: flex;
+      flex-direction: column;
+    }
+    .about__images {
+      order: 1;
+    }
+    .about__info {
+      order: 2;
+    }
+    body {
+      width: 100%;
+    }
+    .footer__container {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
