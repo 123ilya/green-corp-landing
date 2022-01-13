@@ -19,6 +19,7 @@
     />
   </head>
   <body>
+    <!--Header-->
     <header>
       <img class="header__logo" src="img/logo.svg" />
       <div class="header__controls">
@@ -28,12 +29,8 @@
     </header>
     <!--first section-->
     <section class="about">
-      <!--Используем анимацию animated-->
       <div
-        class="
-          about__info
-          animate__animated animate__fadeInLeft animate__fadeIn
-        "
+        class="about__info animate__animated animate__fadeInLeft animate__fadeIn"
       >
         <!--left subsection-->
         <h1>Солнечные панели GreenRobotic</h1>
@@ -45,15 +42,42 @@
       </div>
       <!--Используем анимацию animated-->
       <div
-        class="
-          about_images
-          animate__animated animate__fadeInRight animate__fadeIn
-        "
+        class="about_images animate__animated animate__fadeInRight animate__fadeIn"
       >
         <!--right subsection-->
         <img class="about__sun—image" src="img/sun.png" />
         <img class="about__image" src="img/solar-panel.png" />
       </div>
+    </section>
+    <!--second section-->
+    <section class="features" id="features">
+      <div class="cards">
+        <div class="card">
+          <div class="card__logo"><i class="fas fa-solar-panel"></i></div>
+          <h3>Уменьшите счета за электричество.</h3>
+          <p>
+            Используйте чистую солнечную энергию для питания своего дома:
+            уменьшите зависимость от электросети и счета за электричество.
+          </p>
+        </div>
+        <div class="card">
+          <div class="card__logo">24/7</div>
+          <h3>Мониторинг электроэнергии.</h3>
+          <p>
+            Управляйте своей системой солнечных панелей из любой точки мира с
+            помощью специального мобильного приложения.
+          </p>
+        </div>
+        <div class="card">
+          <div class="card__logo"><i class="fas fa-chart-line"></i></div>
+          <h3>Максимальная эффективность.</h3>
+          <p>
+            Солнечные панели GreenRobotic обеспечивают максимальное производство
+            энергии круглый год, даже на крышах со сложными углами.
+          </p>
+        </div>
+      </div>
+      <div class="features__border"></div>
     </section>
     <!--section for form-->
     <section class="form">
