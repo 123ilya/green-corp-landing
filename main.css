@@ -1,3 +1,5 @@
+/* Блоки features__box должны быть одинаковой высоты!!! 
+Довести до ума буллеты!!! promo__right_card_bullet*/
 header {
   display: flex; /*Делаем элемент <header> контейнером flexbox*/
   justify-content: space-between; /*Размещаем наши элементы в начале и конце оси*/
@@ -222,6 +224,106 @@ footer {
   border: 1px solid #e6eaf4;
   background-color: blue;
 }
+.features__feedback {
+  display: flex;
+  align-items: center;
+  justify-content: normal;
+}
+.features__feedback-left {
+  margin-right: 10px;
+}
+.features__feedback-left h2 {
+  font-size: 48px;
+}
+.features__feedback-left p {
+  font-size: 18px;
+  line-height: 26px;
+  opacity: 0.7;
+}
+.features__feedback-right {
+  display: flex;
+  align-items: center;
+  justify-content: baseline;
+}
+.features__box {
+  padding-top: 30px;
+  padding-right: 40px;
+  padding-bottom: 25px;
+  padding-left: 40px;
+  color: #fff;
+  border-radius: 25px;
+}
+.features__box h3 {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  font-size: 48px;
+}
+.features__savings-box {
+  background-color: #dc5e26;
+  box-shadow: 0px 6px 0px rgb(221 95 38 / 20%);
+  margin-right: 30px;
+}
+.features__rate-box {
+  background-color: #1d263a;
+  box-shadow: 0px 6px 0px rgb(29 38 58 / 20%);
+}
+.stars {
+  color: #ff7039;
+}
+.promo {
+  display: flex;
+  justify-content: normal;
+}
+.promo__image {
+  background-image: url("img/promo.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 50%;
+  flex-shrink: 0;
+}
+.promo__right {
+  background-color: #dd5f26;
+  padding-top: 160px;
+  padding-bottom: 160px;
+  padding-left: 60px;
+  padding-right: 60px;
+  width: 50%;
+}
+.promo__right_card {
+  background-color: white;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-size: 20px;
+  line-height: 22px;
+  font-weight: 500;
+  border-radius: 25px;
+}
+.promo__right_card p {
+  opacity: 0.8;
+}
+/*Довести до ума буллеты!!!*/
+.promo__right_card_bullet {
+  border-radius: 10px;
+  background-color: #ec6b29;
+  width: 10px;
+  height: 10px;
+}
+.promo__right_card_controls button {
+  background-color: #107b1c;
+  margin-top: 20px;
+  font-size: 18px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-weight: 600;
+}
+.fa-chevron-right {
+  font-size: 15px;
+  margin-left: 5px;
+}
 /*Адаптация сайта под мобильные устройства*/
 /*Адаптация под планшет*/
 @media (max-width: 720px) {
@@ -303,6 +405,40 @@ footer {
     .cards {
       display: grid;
       grid-template-columns: auto;
+    }
+    .features__feedback {
+      flex-direction: column;
+    }
+    .features__feedback-left {
+      margin-right: 0px;
+    }
+    .features__feedback-left h2 {
+      font-size: 36px;
+    }
+    .features__feedback-right {
+      flex-direction: column;
+      justify-content: normal;
+      align-items: normal;
+    }
+    .features__box h3 {
+      font-size: 36px;
+    }
+    .features__savings-box {
+      margin-right: 0px;
+      margin-bottom: 30px;
+    }
+    .promo {
+      flex-direction: column-reverse;
+    }
+    .promo__image {
+      height: 500px;
+      width: 100%;
+    }
+    .promo__right {
+      padding-top: 50px;
+      padding-bottom: 50px;
+      padding-left: 10px;
+      padding-right: 10px;
     }
   }
 }
