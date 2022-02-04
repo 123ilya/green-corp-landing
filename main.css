@@ -68,6 +68,7 @@ button {
   background: url("img/back.png") no-repeat;
   background-position: center;
   background-size: cover;
+  position: relative; /*Не могу понять принцип позиционирования*/
 }
 .about h1 {
   font-size: 70px;
@@ -323,6 +324,14 @@ footer {
 .fa-chevron-right {
   font-size: 15px;
   margin-left: 5px;
+}
+.orb-canvas {
+  /*Стилизуем элемент <canvas>*/
+  position: absolute;
+  top: 0; /*Растояние между верхним краем элемента и верхним краем предка*/
+  right: 0; /*Растояние между правым краем элемента и правым краем предка*/
+  height: 100%; /*Свойство определяет высоту элемента. 100% - высота равна высоте родительского элемента*/
+  width: 100%; /*?????????????????!!!!!!!!!!!!!!!!!!!!!!!*/
 }
 /*Адаптация сайта под мобильные устройства*/
 /*Адаптация под планшет*/
