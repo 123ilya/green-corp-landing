@@ -38,3 +38,31 @@ let myInterval = setInterval(() => {
   numberIncreaser();
 }, 50);
  */
+//Получаем элемент, в котором будем изменять и добовлять дочерние элеменнты, и применяем к нему метод addEventListener
+document
+  .querySelector("#budget")
+  .addEventListener("change", function handleSelectChange(event) {
+    if (event.target.value === "other") {
+      //Должны добавить еще одно текстовое поле
+      //---------------------------------------------------
+      let formContainer = document.createElement("div");
+      formContainer.classList.add("form__group", "form__other-input");
+      let input = document.createElement("input");
+      input.placeholder = "Введите ваш вариант";
+      input.type = "text";
+      formContainer.appendChild(input);
+      //-------------------------------------------------
+      //Получаем тег <form>, в который будем вставлять наше поле(перед кнопкой)
+      let idForm = document.querySelector("#form form");
+      //Получаем кнопку
+      let form_Submit = document.querySelector(".form__submit");
+      idForm.insertBefore(formContainer, form_Submit);
+    }
+    //-------------------------------------------------------------------
+    let otherinput = document.querySelector(".form__other-input");
+    if (event.target.value !== "other" && Boolean(otherinput)) {
+      //Удаляем ранее добавленное текстовое поле
+      let idForm = document.querySelector("#form form");
+      idForm.removeChild(otherinput);
+    }
+  });
