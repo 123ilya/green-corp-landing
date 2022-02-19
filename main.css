@@ -5,10 +5,18 @@ header {
   justify-content: space-between; /*Размещаем наши элементы в начале и конце оси*/
   align-items: center; /*Центрируем элементы по поперечной оси*/
   padding: 20px;
-  position: sticky;
-  background-color: #fff;
+  position: fixed;
+  left: 0;
+  right: 0;
+  background-color: transparent;
   top: 0px;
   z-index: 1;
+  transition: background-color 2s, box-shadow 2s;
+  transition-timing-function: ease;
+}
+.header__scrolled {
+  background-color: white;
+  box-shadow: 0 12px 34px -11px rgb(65 62 101 / 10%);
 }
 body {
   font-family: "Raleway", sans-serif;
@@ -63,7 +71,7 @@ button {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding-top: 115px;
+  padding-top: 200px;
   padding-bottom: 115px;
   background: url("img/back.png") no-repeat;
   background-position: center;
